@@ -1,6 +1,6 @@
 name = "rdap-lookup-client"
 type = "webpack"
-route = 'lookup.cyberjake.xyz'
+route = 'lookup.cyberjake.xyz/*'
 zone_id = ''
 usage_model = ''
 account_id = ''
