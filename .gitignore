@@ -50,6 +50,7 @@ npm-debug.log
 testem.log
 /typings
 /www
+.angular/*
 
 # System Files
 .DS_Store
