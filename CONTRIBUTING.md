@@ -16,7 +16,7 @@ Run the following commands:
 
 * `npm install` to download all the npm modules needed by this project
 * `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-* `ng serve` to start a dev server. Navigate to `http://localhost:4200` to see the application. 
+* `ng serve` to start a dev server. Navigate to `http://localhost:4200` to see the application.
 Try out a few domains, such as, `icann.org`, `google.com`, `example.com` to see the results.  
 
 ## Running unit tests
