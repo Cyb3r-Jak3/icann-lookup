@@ -20,7 +20,7 @@
 <div class="lookup-btn-filler">
 </div>
 <ng-container>
-  <div *ngFor="let message of lookupService.messages" [className]="message.type==messageTypes.Info ? 'notice alert cell large-6' : 'error alert cell large-6'">
+  <div *ngFor="let message of lookupService.messages" [className]="message.type===messageTypes.Info ? 'notice alert cell large-6' : 'error alert cell large-6'">
     {{ message.message }}
   </div>
 </ng-container>
