@@ -1,0 +1,40 @@
+name: Build Angular
+
+on:
+  push:
+    branches:
+      - '**'
+    paths:
+      - 'src/*'
+      - '.github/workflows/main.yml'
+      - 'package.json'
+    tags:
+      - "v*"
+  pull_request:
+    branches: [main]
+    paths: ['package.json']
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+          cache: 'npm'
+
+      - name: npm install 
+        run: npm install
+
+      - name: Lint
+        run: npm lint
+
+      - name: Test
+        run: npm test
+      
+      - name: Build
+        run: npm build
