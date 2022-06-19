@@ -27,7 +27,7 @@ export class ApiService {
   getApplicationConfigurationFile (): Observable <any> {
     return this.http.get(this.rdapServersUrl).pipe(mergeMap((configurationFile: any) => {
       if (!configurationFile.bootstrapUrl) {
-        return throwError('INVALID_BOOTSTRAP_FILE');
+        return throwError(() => new Error('INVALID_BOOTSTRAP_FILE'));
       }
 
       return this.http.get(configurationFile.bootstrapUrl);
