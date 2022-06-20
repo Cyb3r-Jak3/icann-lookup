@@ -28,7 +28,7 @@ jobs:
           cache: 'npm'
 
       - name: npm install 
-        run: npm install --force
+        run: npm install
 
       - name: Lint
         run: npm run lint
