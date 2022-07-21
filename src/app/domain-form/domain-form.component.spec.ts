@@ -52,23 +52,3 @@ describe('DomainFormComponent without pre domain', () => {
 
 });
 
-describe('DomainFormComponent with pre domain', () => {
-  let fixture: ComponentFixture<DomainFormComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ DomainFormComponent ],
-      imports: [
-        FormsModule,
-        RouterTestingModule.withRoutes([{path: 'lookup', component: DomainFormComponent}])
-      ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(DomainFormComponent);
-    fixture.detectChanges();
-  });
-
-});
