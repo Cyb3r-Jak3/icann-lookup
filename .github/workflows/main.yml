@@ -5,7 +5,7 @@ on:
     branches:
       - '**'
     paths:
-      - 'src/*'
+      - 'src/**'
       - '.github/workflows/main.yml'
       - 'package.json'
     tags:
