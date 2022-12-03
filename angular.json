@@ -88,11 +88,18 @@
       }
     }
   },
-  "defaultProject": "icann-lookup-client",
   "cli": {
     "schematicCollections": [
       "@angular-eslint/schematics"
     ],
     "analytics": false
+  },
+  "schematics": {
+    "@angular-eslint/schematics:application": {
+      "setParserOptionsProject": true
+    },
+    "@angular-eslint/schematics:library": {
+      "setParserOptionsProject": true
+    }
   }
 }
